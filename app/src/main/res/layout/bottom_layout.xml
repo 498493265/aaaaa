@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:background="#DDDDDD"
+        android:id="@+id/id_tab_settings"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+         <ImageView
+             android:id="@+id/id_tab_settings_img"
+             android:layout_height="50dp"
+             android:layout_width="30dp"
+             android:layout_marginLeft="10dp"
+             android:src="@drawable/icon1">
+             <TextView
+             android:id="@+id/id_textview1"
+             android:layout_height="50dp"
+             android:layout_width="30dp"
+             android:layout_marginLeft="10dp"
+             android:src="@drawable/icon1">
+
+             /Textview>
+
+         </ImageView>
+    </RelativeLayout>
+</RelativeLayout>
+
