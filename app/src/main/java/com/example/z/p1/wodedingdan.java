@@ -11,12 +11,12 @@ import com.example.z.p1.R;
 import com.example.z.p1.regist;
 import com.example.z.p1.secondactivity;
 
-public class user extends AppCompatActivity {
+public class wodedingdan extends AppCompatActivity {
 
     //requestWindowFeature(Window.FEATURE_NO_TITLE);
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user);
+        setContentView(R.layout.wodedingdan);
     }
 }

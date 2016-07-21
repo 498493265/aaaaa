@@ -42,6 +42,43 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".gerenzhuye"
+            android:label="gerenzhuye">
+            <intent-filter>
+                <action android:name="com.litreily.gerenzhuye"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".wodedingdan"
+            android:label="wodedingdan">
+            <intent-filter>
+                <action android:name="com.litreily.wodedingdan"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".woyaoxiadan"
+            android:label="woyaoxiadan">
+            <intent-filter>
+                <action android:name="com.litreily.woyaoxiadan"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".zuixinhuodong"
+            android:label="zuixinhuodong">
+            <intent-filter>
+                <action android:name="com.litreily.zuixinhuodong"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

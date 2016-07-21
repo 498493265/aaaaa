@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     >
     <RelativeLayout
         android:orientation="horizontal"
@@ -14,17 +14,17 @@
                   android:layout_width="wrap_content"
                   android:text="念渔"
                   android:layout_marginLeft="20dp"
-                  android:textColor=""
+                  android:textColor="#000000"
                   android:textSize="30sp"
-                  android:textstyle="bold">
+                  android:textStyle="bold">
         </TextView>
 
         <ImageView
             android:src="@drawable/top_add"
             android:id="@+id/top_add"
-            android:layout_alignparentright="true"
+            android:layout_alignParentRight="true"
 
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:layout_marginLeft="300dp"
             android:scaleType="fitXY"
 

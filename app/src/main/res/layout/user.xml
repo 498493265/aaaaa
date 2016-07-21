@@ -4,9 +4,17 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <include layout="@layout/top_layout">
-        <include layout="@layout/bottom_layout">
+    <include
+        layout="@layout/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0sp"
+        android:layout_marginRight="0sp"/>
 
-        </include>
-    </include>
+    <include layout="@layout/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0sp"
+        android:layout_marginRight="0sp"/>
 </RelativeLayout>
