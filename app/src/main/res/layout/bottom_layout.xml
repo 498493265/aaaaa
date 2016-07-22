@@ -33,14 +33,14 @@
             android:layout_height="50dp"
             android:layout_width="30dp"
             android:layout_marginLeft="210dp"
-            android:src="@drawable/icon2">
+            android:src="@drawable/icon3">
         </ImageView>
         <ImageView
             android:id="@+id/id_tab_settings_img4"
             android:layout_height="50dp"
             android:layout_width="30dp"
             android:layout_marginLeft="300dp"
-            android:src="@drawable/icon2">
+            android:src="@drawable/icon4">
         </ImageView>
 
         <TextView
