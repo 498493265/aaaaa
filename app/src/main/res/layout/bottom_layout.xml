@@ -1,94 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="#FFFFFF"
-        android:orientation="vertical"
-        android:layout_height="wrap_content"
+<LinearLayout android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_height="65dp"
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
 
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout
+    <LinearLayout
         android:background="#DDDDDD"
-        android:id="@+id/id_tab_settings"
-        android:layout_height="60dp"
-        android:layout_width="match_parent"
-        android:orientation="horizontal">
-         <ImageView
+        android:id="@+id/id_tab_1"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:orientation="vertical">
+         <ImageButton
              android:id="@+id/id_tab_settings_img1"
-             android:layout_height="50dp"
-             android:layout_width="30dp"
-             android:layout_marginLeft="30dp"
+             android:layout_height="40dp"
+             android:layout_width="40dp"
              android:src="@drawable/icon1">
-
-
-         </ImageView>
-        <ImageView
+         </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的主页"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#DDDDDD"
+        android:id="@+id/id_tab_2"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:orientation="vertical">
+        <ImageButton
             android:id="@+id/id_tab_settings_img2"
-            android:layout_height="50dp"
-            android:layout_width="30dp"
-            android:layout_marginLeft="120dp"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
             android:src="@drawable/icon2">
-        </ImageView>
-        <ImageView
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我要下单"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#DDDDDD"
+        android:id="@+id/id_tab_3"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:orientation="vertical">
+        <ImageButton
             android:id="@+id/id_tab_settings_img3"
-            android:layout_height="50dp"
-            android:layout_width="30dp"
-            android:layout_marginLeft="210dp"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
             android:src="@drawable/icon3">
-        </ImageView>
-        <ImageView
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的订单"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#DDDDDD"
+        android:id="@+id/id_tab_4"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:orientation="vertical">
+        <ImageButton
             android:id="@+id/id_tab_settings_img4"
-            android:layout_height="50dp"
-            android:layout_width="30dp"
-            android:layout_marginLeft="300dp"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
             android:src="@drawable/icon4">
-        </ImageView>
-
+        </ImageButton>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="我的主页"
-            android:layout_marginLeft="18dp"
-            android:id="@+id/textView10"
-            android:layout_alignTop="@+id/textView11"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:text="最新活动"/>
+    </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="我要下单"
-            android:layout_marginLeft="32dp"
-            android:id="@+id/textView11"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/textView10"
-            android:layout_toEndOf="@+id/textView10" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="我的订单"
-            android:layout_marginLeft="123dp"
-            android:id="@+id/textView12"
-
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/textView10"
-            android:layout_toEndOf="@+id/textView10" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="最新活动"
-            android:layout_marginLeft="213dp"
-            android:id="@+id/textView13"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/textView10"
-            android:layout_toEndOf="@+id/textView10" />
-
-    </RelativeLayout>
-
-</RelativeLayout>
+</LinearLayout>
 

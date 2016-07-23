@@ -1,4 +1,4 @@
-package com.example.tabexample;
+package com.example.z.p1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,12 +14,14 @@ import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import com.example.z.p1.R;
+
 public class user extends Activity implements
         android.view.View.OnClickListener {
 
     private ViewPager mViewPager;// 用来放置界面切换
     private PagerAdapter mPagerAdapter;// 初始化View适配器
-    private List<view> mViews = new ArrayList<view>();// 用来存放Tab01-04
+    private List<View> mViews = new ArrayList<>();// 用来存放Tab01-04
     // 四个Tab，每个Tab包含一个按钮
     private LinearLayout mTabWeiXin;
     private LinearLayout mTabAddress;
@@ -56,19 +58,19 @@ public class user extends Activity implements
                 switch (currentItem) {
                     case 0:
                         resetImg();
-                        mWeiXinImg.setImageResource(R.drawable.tab_weixin_pressed);
+                        mWeiXinImg.setImageResource(R.drawable.icon1);
                         break;
                     case 1:
                         resetImg();
-                        mAddressImg.setImageResource(R.drawable.tab_address_pressed);
+                        mAddressImg.setImageResource(R.drawable.icon2);
                         break;
                     case 2:
                         resetImg();
-                        mFrdImg.setImageResource(R.drawable.tab_find_frd_pressed);
+                        mFrdImg.setImageResource(R.drawable.icon3);
                         break;
                     case 3:
                         resetImg();
-                        mSettingImg.setImageResource(R.drawable.tab_settings_pressed);
+                        mSettingImg.setImageResource(R.drawable.icon4);
                         break;
                     default:
                         break;
@@ -93,15 +95,15 @@ public class user extends Activity implements
     private void initView() {
         mViewPager = (ViewPager) findViewById(R.id.id_viewpage);
         // 初始化四个LinearLayout
-        mTabWeiXin = (LinearLayout) findViewById(R.id.id_tab_weixin);
-        mTabAddress = (LinearLayout) findViewById(R.id.id_tab_address);
-        mTabFrd = (LinearLayout) findViewById(R.id.id_tab_frd);
-        mTabSetting = (LinearLayout) findViewById(R.id.id_tab_settings);
+        mTabWeiXin = (LinearLayout) findViewById(R.id.id_tab_1);
+        mTabAddress = (LinearLayout) findViewById(R.id.id_tab_2);
+        mTabFrd = (LinearLayout) findViewById(R.id.id_tab_3);
+        mTabSetting = (LinearLayout) findViewById(R.id.id_tab_4);
         // 初始化四个按钮
-        mWeiXinImg = (ImageButton) findViewById(R.id.id_tab_weixin_img);
-        mAddressImg = (ImageButton) findViewById(R.id.id_tab_address_img);
-        mFrdImg = (ImageButton) findViewById(R.id.id_tab_frd_img);
-        mSettingImg = (ImageButton) findViewById(R.id.id_tab_settings_img);
+        mWeiXinImg = (ImageButton) findViewById(R.id.id_tab_settings_img1);
+        mAddressImg = (ImageButton) findViewById(R.id.id_tab_settings_img2);
+        mFrdImg = (ImageButton) findViewById(R.id.id_tab_settings_img3);
+        mSettingImg = (ImageButton) findViewById(R.id.id_tab_settings_img4);
     }
 
     /**
@@ -111,10 +113,10 @@ public class user extends Activity implements
 
         // 初始化四个布局
         LayoutInflater mLayoutInflater = LayoutInflater.from(this);
-        View tab01 = mLayoutInflater.inflate(R.layout.tab01, null);
-        View tab02 = mLayoutInflater.inflate(R.layout.tab02, null);
-        View tab03 = mLayoutInflater.inflate(R.layout.tab03, null);
-        View tab04 = mLayoutInflater.inflate(R.layout.tab04, null);
+        View tab01 = mLayoutInflater.inflate(R.layout.gerenzhuye, null);
+        View tab02 = mLayoutInflater.inflate(R.layout.woyaoxiadan, null);
+        View tab03 = mLayoutInflater.inflate(R.layout.wodedingdan, null);
+        View tab04 = mLayoutInflater.inflate(R.layout.zuixinhuodong, null);
 
         mViews.add(tab01);
         mViews.add(tab02);
@@ -160,26 +162,26 @@ public class user extends Activity implements
     public void onClick(View arg0) {
 
         switch (arg0.getId()) {
-            case R.id.id_tab_weixin:
+            case R.id.id_tab_1:
                 mViewPager.setCurrentItem
                         (0);
                 resetImg();
-                mWeiXinImg.setImageResource(R.drawable.tab_weixin_pressed);
+                mWeiXinImg.setImageResource(R.drawable.icon1);
                 break;
-            case R.id.id_tab_address:
+            case R.id.id_tab_2:
                 mViewPager.setCurrentItem(1);
                 resetImg();
-                mAddressImg.setImageResource(R.drawable.tab_address_pressed);
+                mAddressImg.setImageResource(R.drawable.icon2);
                 break;
-            case R.id.id_tab_frd:
+            case R.id.id_tab_3:
                 mViewPager.setCurrentItem(2);
                 resetImg();
-                mFrdImg.setImageResource(R.drawable.tab_find_frd_pressed);
+                mFrdImg.setImageResource(R.drawable.icon3);
                 break;
-            case R.id.id_tab_settings:
+            case R.id.id_tab_4:
                 mViewPager.setCurrentItem(3);
                 resetImg();
-                mSettingImg.setImageResource(R.drawable.tab_settings_pressed);
+                mSettingImg.setImageResource(R.drawable.icon4);
                 break;
             default:
                 break;
@@ -190,11 +192,10 @@ public class user extends Activity implements
      * 把所有图片变暗
      */
     private void resetImg() {
-        mWeiXinImg.setImageResource(R.drawable.tab_weixin_normal);
-        mAddressImg.setImageResource(R.drawable.tab_address_normal);
-        mFrdImg.setImageResource(R.drawable.tab_find_frd_normal);
-        mSettingImg.setImageResource(R.drawable.tab_settings_normal);
+        mWeiXinImg.setImageResource(R.drawable.icon1);
+        mAddressImg.setImageResource(R.drawable.icon2);
+        mFrdImg.setImageResource(R.drawable.icon3);
+        mSettingImg.setImageResource(R.drawable.icon4);
     }
 
 }
-</view></view>
