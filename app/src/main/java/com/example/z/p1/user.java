@@ -37,7 +37,8 @@ public class user extends Activity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.user);
+
         initView();
         initViewPage();
         initEvent();
@@ -55,6 +56,7 @@ public class user extends Activity implements
             @Override
             public void onPageSelected(int arg0) {
                 int currentItem = mViewPager.getCurrentItem();
+                mViewPager.setCurrentItem(currentItem);
                 switch (currentItem) {
                     case 0:
                         resetImg();
@@ -124,6 +126,7 @@ public class user extends Activity implements
         mViews.add(tab04);
 
         // 适配器初始化并设置
+
         mPagerAdapter = new PagerAdapter() {
 
             @Override
@@ -152,8 +155,10 @@ public class user extends Activity implements
                 return mViews.size();
             }
         };
+     //   mViews.setAdapter(mPagerAdapter);
         mViewPager.setAdapter(mPagerAdapter);
     }
+
 
     /**
      * 判断哪个要显示，及设置按钮图片
@@ -163,8 +168,7 @@ public class user extends Activity implements
 
         switch (arg0.getId()) {
             case R.id.id_tab_1:
-                mViewPager.setCurrentItem
-                        (0);
+                mViewPager.setCurrentItem(0);
                 resetImg();
                 mWeiXinImg.setImageResource(R.drawable.icon1);
                 break;
@@ -192,10 +196,10 @@ public class user extends Activity implements
      * 把所有图片变暗
      */
     private void resetImg() {
-        mWeiXinImg.setImageResource(R.drawable.icon1);
-        mAddressImg.setImageResource(R.drawable.icon2);
-        mFrdImg.setImageResource(R.drawable.icon3);
-        mSettingImg.setImageResource(R.drawable.icon4);
+        mWeiXinImg.setImageResource(R.drawable.icon11);
+        mAddressImg.setImageResource(R.drawable.icon22);
+        mFrdImg.setImageResource(R.drawable.icon33);
+        mSettingImg.setImageResource(R.drawable.icon44);
     }
 
 }
