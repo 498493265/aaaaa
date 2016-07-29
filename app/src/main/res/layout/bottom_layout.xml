@@ -39,7 +39,7 @@
             android:layout_height="40dp"
             android:layout_width="40dp"
             android:clickable="false"
-            android:src="@drawable/icon2">
+            android:src="@drawable/icon22">
         </ImageButton>
         <TextView
             android:layout_width="wrap_content"
@@ -59,7 +59,7 @@
             android:layout_height="40dp"
             android:layout_width="40dp"
             android:clickable="false"
-            android:src="@drawable/icon3">
+            android:src="@drawable/icon33">
         </ImageButton>
         <TextView
             android:layout_width="wrap_content"
@@ -79,7 +79,7 @@
             android:layout_height="40dp"
             android:layout_width="40dp"
             android:clickable="false"
-            android:src="@drawable/icon4">
+            android:src="@drawable/icon44">
         </ImageButton>
         <TextView
             android:layout_width="wrap_content"

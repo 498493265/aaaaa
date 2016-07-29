@@ -79,6 +79,15 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".ViewPagerAdapter"
+            android:label="ViewPagerAdapter">
+            <intent-filter>
+                <action android:name="com.litreily.ViewPagerAdapter"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
