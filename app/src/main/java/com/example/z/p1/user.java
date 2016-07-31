@@ -9,9 +9,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
+import android.util.LogPrinter;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class user extends FragmentActivity {
     private ViewPager mVPActivity;
@@ -60,22 +63,26 @@ public class user extends FragmentActivity {
     private void initEvent() {
 
        // mFragment1.setOnClickListener(this);
-       // mFragment2.setOnClickListener(this);
+      //  mFragment2.setOnClickListener(this);
        // mFragment3.setOnClickListener(this);
-       // mFragment4.setOnClickListener(this);
+      //  mFragment4.setOnClickListener(this);
         mVPActivity.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             /**
              *ViewPage左右滑动时
              */
             @Override
             public void onPageSelected(int arg0) {
+                Log.d("user", "This is Debug.");
+
                 int currentItem = mVPActivity.getCurrentItem();
                 switch (currentItem) {
+
                     case 0:
                         resetImg();
                         mWeiXinImg.setImageResource(R.drawable.icon1);
                         break;
                     case 1:
+                        Log.d("user", "This is Debug.");
                         resetImg();
                         mAddressImg.setImageResource(R.drawable.icon2);
                         break;
@@ -113,6 +120,7 @@ public class user extends FragmentActivity {
     }
     public void showtab2()
     {
+        //Toast.makeText(user.this, "" + "关于", Toast.LENGTH_SHORT).show();
         mVPActivity.setCurrentItem(1);
         resetImg();
         mWeiXinImg.setImageResource(R.drawable.icon2);
@@ -129,10 +137,11 @@ public class user extends FragmentActivity {
         resetImg();
         mWeiXinImg.setImageResource(R.drawable.icon4);
     }
-    /*public void onClick(View arg0) {
+    public void onClick(View arg0) {
 
         switch (arg0.getId()) {
             case R.id.id_tab_1:
+                Log.d("user", "This is Debug.");
                 mVPActivity.setCurrentItem(0);
                 resetImg();
                 mWeiXinImg.setImageResource(R.drawable.icon1);
@@ -155,7 +164,7 @@ public class user extends FragmentActivity {
             default:
                 break;
         }
-    }*/
+    }
 
     private void resetImg() {
         mWeiXinImg.setImageResource(R.drawable.icon11);

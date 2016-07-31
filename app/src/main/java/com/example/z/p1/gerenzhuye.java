@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.z.p1.R;
 import com.example.z.p1.regist;
@@ -27,8 +28,10 @@ public class gerenzhuye extends Fragment implements View.OnClickListener {
 
     public void onClick(View v) {
         // TODO Auto-generated method stub
-        int id  = v.getId();
-            if(id==R.id.id_tab_1)
-                ((user) getActivity()).showtab1();
+        int id = v.getId();
+        if (id == R.id.id_tab_1) {
+            //((user) getActivity()).showtab1();
+            //Toast.makeText(user.this, "" + "关于", Toast.LENGTH_SHORT).show();
+        }
     }
 }
