@@ -14,7 +14,7 @@ import com.example.z.p1.R;
 import com.example.z.p1.regist;
 import com.example.z.p1.secondactivity;
 
-public class woyaoxiadan extends Fragment implements View.OnClickListener{
+public class woyaoxiadan extends Fragment{
 
     //requestWindowFeature(Window.FEATURE_NO_TITLE);
     @Override
@@ -24,10 +24,5 @@ public class woyaoxiadan extends Fragment implements View.OnClickListener{
         View view = inflater.inflate(R.layout.woyaoxiadan, container, false);
         return view;
     }
-    public void onClick(View v) {
-        // TODO Auto-generated method stub
-        int id  = v.getId();
-        if(id==R.id.id_tab_2)
-            ((user) getActivity()).showtab2();
-    }
+
 }

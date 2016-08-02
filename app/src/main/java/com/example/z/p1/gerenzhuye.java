@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +16,7 @@ import com.example.z.p1.R;
 import com.example.z.p1.regist;
 import com.example.z.p1.secondactivity;
 
-public class gerenzhuye extends Fragment implements View.OnClickListener {
+public class gerenzhuye extends Fragment{
 
     //requestWindowFeature(Window.FEATURE_NO_TITLE);
     @Override
@@ -26,12 +27,6 @@ public class gerenzhuye extends Fragment implements View.OnClickListener {
         return view;
     }
 
-    public void onClick(View v) {
-        // TODO Auto-generated method stub
-        int id = v.getId();
-        if (id == R.id.id_tab_1) {
-            //((user) getActivity()).showtab1();
-            //Toast.makeText(user.this, "" + "关于", Toast.LENGTH_SHORT).show();
-        }
-    }
+
+
 }

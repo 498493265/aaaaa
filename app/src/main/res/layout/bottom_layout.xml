@@ -7,7 +7,7 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
-        android:background="#DDDDDD"
+        android:background="#FFFFFF"
         android:id="@+id/id_tab_1"
         android:layout_weight="1"
         android:gravity="center"
@@ -27,7 +27,7 @@
             android:text="我的主页"/>
     </LinearLayout>
     <LinearLayout
-        android:background="#DDDDDD"
+        android:background="#FFFFFF"
         android:id="@+id/id_tab_2"
         android:layout_weight="1"
         android:gravity="center"
@@ -47,7 +47,7 @@
             android:text="我要下单"/>
     </LinearLayout>
     <LinearLayout
-        android:background="#DDDDDD"
+        android:background="#FFFFFF"
         android:id="@+id/id_tab_3"
         android:layout_weight="1"
         android:gravity="center"
@@ -67,7 +67,7 @@
             android:text="我的订单"/>
     </LinearLayout>
     <LinearLayout
-        android:background="#DDDDDD"
+        android:background="#FFFFFF"
         android:id="@+id/id_tab_4"
         android:layout_weight="1"
         android:gravity="center"
